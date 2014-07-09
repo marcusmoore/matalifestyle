@@ -12,6 +12,61 @@
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "foundation/functions";
 
+// Why not Marcus?
+.top-bar{
+	background: transparent !important;
+}
+/* background setup */
+    .background {
+        background-image: url("/img/223.jpg");
+        background-repeat: no-repeat;
+        /* custom background-position */
+        background-position: 50% 50%;
+        /* ie8- graceful degradation */
+        background-position: 50% 50%\9 !important;
+    }
+    /* fullscreen setup */
+    html,
+    body {
+        /* give this to all tags from html to .fullscreen */
+        height: 100%;
+        margin: 0 auto -45px;
+    }
+    .fullscreen,
+    .content-wrapper {
+        width: 100%;
+        min-height: 100%;
+    }
+    .not-fullscreen,
+    .not-fullscreen .content-wrapper,
+    .fullscreen.not-overflow,
+    .fullscreen.not-overflow .content-wrapper {
+        height: 100%;
+        overflow: hidden;
+        margin: 0 auto -45px;
+    }
+    /* content centering styles */
+    .content-wrapper {
+        display: table;
+    }
+    .content {
+        display: table-cell;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .not-fullscreen {
+        height: 50%;
+    }
+    .social-wrapper {
+        z-index: 1000;
+        float: right;
+        width: 150px;
+        border-radius: 3px;
+        padding: 4px 8px;
+        /*background-color: blue;*/
+    }
+
 // $experimental: true;
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
